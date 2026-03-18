@@ -1,0 +1,326 @@
+/* docs/stylesheets/extra.css */
+
+/* Madevo theme
+   Clean dark-first branding with readable typography and subtle accents
+*/
+
+:root {
+  --madevo-bg: #0f1117;
+  --madevo-surface: #171b24;
+  --madevo-surface-2: #1d2330;
+  --madevo-border: #2b3445;
+  --madevo-text: #e8edf7;
+  --madevo-text-muted: #aeb8c9;
+  --madevo-accent: #4da3ff;
+  --madevo-accent-2: #7cc4ff;
+  --madevo-success: #3ddc97;
+  --madevo-warning: #ffb84d;
+  --madevo-danger: #ff6b6b;
+  --madevo-code-bg: #121722;
+  --madevo-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  --madevo-radius: 14px;
+}
+
+/* Base */
+body {
+  background-color: var(--madevo-bg);
+  color: var(--madevo-text);
+}
+
+.md-main,
+.md-content,
+.md-content__inner,
+.md-typeset {
+  background-color: transparent;
+}
+
+.md-typeset {
+  line-height: 1.7;
+  font-size: 0.8rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--madevo-text);
+}
+
+.md-typeset h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--madevo-border);
+}
+
+.md-typeset h3 {
+  margin-top: 1.4rem;
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th {
+  color: var(--madevo-text);
+}
+
+.md-typeset strong {
+  color: #ffffff;
+}
+
+.md-typeset hr {
+  border-bottom: 1px solid var(--madevo-border);
+}
+
+/* Links */
+.md-typeset a,
+.md-nav__link:hover,
+.md-nav__link--active,
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--madevo-accent);
+}
+
+.md-typeset a:hover {
+  color: var(--madevo-accent-2);
+}
+
+/* Header */
+.md-header {
+  background: rgba(15, 17, 23, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.md-header__title,
+.md-logo,
+.md-header__button {
+  color: #ffffff;
+}
+
+/* Tabs */
+.md-tabs {
+  background: #11151d;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.md-tabs__link {
+  opacity: 0.9;
+}
+
+/* Sidebar */
+.md-nav,
+.md-sidebar__scrollwrap {
+  background: transparent;
+}
+
+.md-nav__title {
+  color: var(--madevo-text-muted);
+  font-weight: 700;
+}
+
+.md-nav__item .md-nav__link {
+  border-radius: 10px;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.md-nav__item .md-nav__link:hover {
+  background: rgba(77, 163, 255, 0.08);
+}
+
+.md-nav__item .md-nav__link--active {
+  background: rgba(77, 163, 255, 0.12);
+  font-weight: 700;
+}
+
+/* Search */
+.md-search__form {
+  border-radius: 999px;
+  background: var(--madevo-surface);
+  border: 1px solid var(--madevo-border);
+}
+
+.md-search__input {
+  color: var(--madevo-text);
+}
+
+.md-search-result,
+.md-search-result__meta {
+  color: var(--madevo-text);
+}
+
+/* Main content cards feel */
+.md-content__inner {
+  padding-bottom: 3rem;
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--madevo-border);
+  border-radius: var(--madevo-radius);
+  overflow: hidden;
+  box-shadow: var(--madevo-shadow);
+  background: var(--madevo-surface);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--madevo-surface-2);
+  color: #ffffff;
+  border-bottom: 1px solid var(--madevo-border);
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: rgba(77, 163, 255, 0.04);
+}
+
+/* Code blocks */
+.md-typeset code {
+  background: rgba(77, 163, 255, 0.1);
+  color: #d8ebff;
+  border-radius: 6px;
+  padding: 0.15em 0.4em;
+}
+
+.md-typeset pre > code {
+  background: var(--madevo-code-bg);
+  color: #eaf2ff;
+  border-radius: var(--madevo-radius);
+  padding: 1rem;
+}
+
+.highlight,
+.md-typeset pre {
+  background: var(--madevo-code-bg);
+  border: 1px solid var(--madevo-border);
+  border-radius: var(--madevo-radius);
+  box-shadow: var(--madevo-shadow);
+}
+
+.md-clipboard {
+  color: var(--madevo-text-muted);
+}
+
+.md-clipboard:hover {
+  color: var(--madevo-accent);
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1px solid var(--madevo-border);
+  border-radius: var(--madevo-radius);
+  background: var(--madevo-surface);
+  box-shadow: var(--madevo-shadow);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background: rgba(77, 163, 255, 0.1);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Blockquotes */
+.md-typeset blockquote {
+  border-left: 4px solid var(--madevo-accent);
+  background: rgba(77, 163, 255, 0.06);
+  padding: 0.8rem 1rem;
+  border-radius: 0 10px 10px 0;
+  color: var(--madevo-text);
+}
+
+/* Buttons and interactive accents */
+.md-top,
+.md-typeset .md-button {
+  border-radius: 999px;
+}
+
+.md-typeset .md-button {
+  border-color: var(--madevo-accent);
+  color: var(--madevo-accent);
+}
+
+.md-typeset .md-button:hover {
+  background: var(--madevo-accent);
+  color: #08111d;
+}
+
+/* Footer */
+.md-footer {
+  background: #0b0e14;
+}
+
+.md-footer-meta {
+  background: #090c11;
+}
+
+/* TOC */
+.md-nav--secondary .md-nav__title {
+  color: var(--madevo-text-muted);
+}
+
+.md-nav--secondary .md-nav__link {
+  color: var(--madevo-text-muted);
+}
+
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link--active {
+  color: var(--madevo-accent);
+}
+
+/* Images */
+.md-typeset img {
+  border-radius: var(--madevo-radius);
+  box-shadow: var(--madevo-shadow);
+  border: 1px solid var(--madevo-border);
+}
+
+/* Smooth rounded containers for content sections on larger screens */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner {
+    margin-top: 1rem;
+  }
+
+  .md-content__inner {
+    background: rgba(23, 27, 36, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 1.5rem 2rem 2.5rem;
+  }
+}
+
+/* Mobile tuning */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset h1 {
+    font-size: 1.6rem;
+  }
+
+  .md-content__inner {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  .highlight,
+  .md-typeset pre,
+  .md-typeset table:not([class]),
+  .md-typeset .admonition,
+  .md-typeset details {
+    border-radius: 12px;
+  }
+}
+
+/* Optional accent for selected text */
+::selection {
+  background: rgba(77, 163, 255, 0.28);
+  color: #ffffff;
+}
