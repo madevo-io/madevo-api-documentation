@@ -1,0 +1,50 @@
+site_name: Madevo API Documentation
+site_description: Customer-facing documentation for the Madevo secure API
+site_url: https://your-docs-domain.com
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Authentication: getting-started/authentication.md
+      - Response Format: getting-started/response-format.md
+      - Pagination: getting-started/pagination.md
+
+  - API Reference:
+      - Overview: api-reference/index.md
+      - Auth: api-reference/auth.md
+      - Settings: api-reference/settings.md
+      - Context Files: api-reference/context-files.md
+      - Users: api-reference/users.md
+      - Companies: api-reference/companies.md
+      - Datasources: api-reference/datasources.md
+      - Assistant: api-reference/assistant.md
+      - Agents: api-reference/agents.md
+      - WebSocket: api-reference/websocket.md
+
+  - Guides:
+      - Overview: guides/index.md
+      - Upload and Create Datasource: guides/upload-and-create-datasource.md
+      - Insert Data into Datasource: guides/insert-data-into-datasource.md
+      - Start an Assistant Conversation: guides/start-an-assistant-conversation.md
+      - Stream Assistant Responses: guides/stream-assistant-responses.md
+      - Schedule an Agent Task: guides/schedule-an-agent-task.md
+
+  - Reference:
+      - Errors: reference/errors.md
+      - Field Notes: reference/field-notes.md
+      - WebSocket Events: reference/websocket-events.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - attr_list
+  - def_list
+  - footnotes
