@@ -1,6 +1,6 @@
 site_name: Madevo Documentation
 site_description: Product guides and API reference for the Madevo platform
-site_url: https://madevo-io.github.io/api-docs/
+site_url: https://madevo-io.github.io/madevo-api-documentation/
 
 theme:
   name: material
