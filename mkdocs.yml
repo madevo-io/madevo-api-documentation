@@ -5,7 +5,7 @@ site_url: https://madevo-io.github.io/madevo-api-documentation/
 theme:
   name: material
   language: en
-  logo: assets/white.png
+  logo: black.png
   features:
     - navigation.instant
     - navigation.tabs
